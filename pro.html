@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Chnager</title>
+    <style>
+        h1{
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 1000;
+        }
+        .btn{
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            gap: 20px;
+            height: 200px;
+            margin: 50px 25px;
+        }
+        .btn button{
+            width: 150px;
+            border: 3px solid;
+            border-radius: 10%;
+        }
+        #red{
+            background: red;
+        }
+        #green{
+            background: green;
+        }
+        #blue{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Changer</h1>
+    <h1>Here You Can Change the Background colour!!</h1>
+    <div class="btn">
+        <button id="red" onclick="setcolor('red')">RED</button>
+        <button id="green" onclick="setcolor('green')">GREEN</button>
+        <button id="blue" onclick="setcolor('blue')">BLUE</button>
+        <button id="random" onclick="selection()">RANDOM</button>
+
+    </div>    
+
+<script src="pro.js"></script>
+</body>
+</html>
